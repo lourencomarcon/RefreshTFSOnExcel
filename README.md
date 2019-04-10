@@ -12,11 +12,11 @@ Um executável que será responsável por atualizar automaticamente as queries d
 
 3.	Ir no menu Desenvolvedor > Abrir o editor do Visual Basic
 <br/>
-![001](images/001.jpg)
+<img src="images/001.jpg" />
 
 4.	Fazer  [download do ModuloTFS.bas](https://raw.githubusercontent.com/lourencomarcon/RefreshTFSOnExcel/master/downloads/ModuloTFS.bas) em uma pasta local e no editor importar o arquivo para o projeto.
 <br/>
-![002](images/002.jpg)
+<img src="images/002.jpg" />
 
 5.	Salvar a planilha com a extensão .xlsm
 
@@ -24,17 +24,17 @@ Um executável que será responsável por atualizar automaticamente as queries d
 
 7.	No agendador de tarefas > Criar uma tarefa > Preencher o nome para a tarefa > Marcar a opção de executar com privilégios mais altos.
 <br/>
-![003](images/003.jpg)
+<img src="images/003.jpg" />
 
 8.	Criar um disparador, pode ser configurado conforme a necessidade, no exemplo abaixo irá rodar de hora em hora.
 <br/>
-![004](images/004.jpg)
+<img src="images/004.jpg" />
 
 9.	Criar uma ação para a tarefa > Na aba Ações > Novo > Selecionar a opção Iniciar um programa 
     * Fazer [download do executavel](https://github.com/lourencomarcon/RefreshTFSOnExcel/raw/master/downloads/RefreshTFSOnExcel.exe) em uma pasta local e seleciona-lo
     * Nos argumentos, deverá ser passado dois parâmetros, o caminho da planilha e o nome das abas que possuem as queries, se possuir mais de uma aba, concatenar com ponto e vírgula. Exemplo: "C:\PlanilhaTFS.xlsm" "TFS1; TFS A"
 <br/>
-![005](images/005.jpg)
+<img src="images/005.jpg" />
 
 10.	Clicar em Ok para salvar a tarefa e aguardar a sua execução.
 
