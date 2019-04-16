@@ -51,7 +51,7 @@ Private Function FindTeamControl(tagName As String) As CommandBarControl
     Dim control As CommandBarControl
 
     For Each commandBar In Application.CommandBars
-        If commandBar.Name = "Team" Then
+		If commandBar.Name = "Team" Or commandBar.Name = "Equipe" Then
             Set teamCommandBar = commandBar
             Exit For
         End If
