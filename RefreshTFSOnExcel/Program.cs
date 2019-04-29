@@ -21,6 +21,8 @@ namespace RefreshTFSOnExcel
 
             Excel.Application xlApp = new Excel.Application();
 
+            xlApp.DisplayAlerts = false;
+
             Excel.Workbook xlWorkBook = null;
 
             string fileName = args[0];
