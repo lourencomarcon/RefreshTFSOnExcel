@@ -46,6 +46,13 @@ Um executável que será responsável por atualizar automaticamente as queries d
 RefreshTFSOnExcel.exe "C:\PlanilhaTFS.xlsm" "TFS1; TFS A"
 ```
 
+Caso ocorra um erro ao tentar abrir o arquivo (COMException 0x800706BE), pode ser ajustado para que a aplicação torne o Excel visível, passando o parâmetro *"visible"*
+
+```console
+RefreshTFSOnExcel.exe "C:\PlanilhaTFS.xlsm" "TFS1; TFS A" "visible"
+```
+
+
 <br/>
 
 **Obs.:** No diretório em que está o executável, a cada rotina ele irá logar em um arquivo texto, isso irá facilitar a visibilidade da execução e também para apontar possíveis problemas.

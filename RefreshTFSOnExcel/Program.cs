@@ -29,11 +29,16 @@ namespace RefreshTFSOnExcel
 
             string[] worksheets = args[1].Split(';').Select(p => p.Trim()).ToArray();
 
+            bool appVisible = args.Length >= 3 && args[2].ToLower() == "visible";
+
             logger.Info("Iniciando a rotina de atualização automática do excel com query do TFS");
 
             try
             {
                 logger.Info($"Abrindo a planilha '{fileName}'");
+
+                if (appVisible)
+                    xlApp.Visible = true;
 
                 xlWorkBook = xlApp.Workbooks.Open(fileName);
 
