@@ -50,6 +50,8 @@ namespace RefreshTFSOnExcel
 
                     if (message != "Sucess")
                         logger.Error($"Ocorreu um erro ao atualizar a aba '{worksheet}'. Erro: {message}");
+                    else
+                        System.Threading.Thread.Sleep(5000);
                 }
 
                 logger.Info($"Salvando a planilha '{fileName}'");
